@@ -1,3 +1,4 @@
+import { Button } from 'react-bootstrap'
 import Header from '../../components/Header/Header'
 import './MainPage.css'
 
@@ -7,7 +8,7 @@ const MainPage = () => {
       <>
         <Header/>
       </>
-      <h1>Main Page</h1>
+      <Button/>
     </div>
   )
 }
