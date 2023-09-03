@@ -2,6 +2,7 @@ import Header from "../../components/Header/Header"
 import MarkdownPage from "../../components/MarkdownPage/MarkdownPage"
 
 const Computer = () => {
+
   return (
     <div>
       <Header/>

@@ -3,6 +3,7 @@ import { Button, Card } from "react-bootstrap"
 export interface IProps {
   filename: string
   title: string
+  url: string
 }
 
 const ImageBlock = (props: IProps) => {
