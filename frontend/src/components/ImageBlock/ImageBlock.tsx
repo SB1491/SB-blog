@@ -1,4 +1,4 @@
-import { Button, Card } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 
 export interface IProps {
   filename: string
@@ -8,7 +8,7 @@ export interface IProps {
 
 const ImageBlock = (props: IProps) => {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card  className="shadow" style={{ width: '18rem' }}>
       <Card.Img variant="top" src={"images/".concat(props.filename)}/>
       <Card.Body>
         <Card.Title className="title">{props.title}</Card.Title>
