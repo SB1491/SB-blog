@@ -22,7 +22,7 @@ const ImageBlock = (props: IProps) => {
       className="shadow" 
       style={{ width: '18rem' }}
     >
-      <Card.Img variant="top" src={"images/".concat(props.filename)}/>
+      <Card.Img variant="top" src={"drawing/images/".concat(props.filename)}/>
       <Card.Body>
         <Card.Title className="title">{props.title}</Card.Title>
         <Button 
@@ -30,7 +30,7 @@ const ImageBlock = (props: IProps) => {
           className="url-button"
           onClick={handleClickX}> X </Button>
         <Button 
-          variant="info" 
+          variant="info"
           className="url-button"
           onClick={handleClickPixiv}>Pixiv</Button>
       </Card.Body>
