@@ -9,7 +9,6 @@ const Drawing = () => {
 
   return (
     <>
-      <Header/>
       <h1>Drawing</h1>
       {images.map((image, index) => (
         <ImageBlock

@@ -10,7 +10,6 @@ const Linguistics = () => {
 
   return (
     <>
-      <Header/>
       <h1>Linguistics</h1>
       <LinkList links={links}/>
     </>
