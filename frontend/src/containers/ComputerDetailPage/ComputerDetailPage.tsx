@@ -1,4 +1,3 @@
-import Header from "../../components/Header/Header"
 import MarkdownPage from "../../components/MarkdownPage/MarkdownPage"
 
 const ComputerDetailPage = () => {
