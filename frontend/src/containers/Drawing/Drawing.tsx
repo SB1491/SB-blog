@@ -4,7 +4,7 @@ import ImageBlock from "../../components/ImageBlock/ImageBlock"
 const Drawing = () => {
 
   const images = [
-    { title: '이치카', filename: 'ichika.png', url: 'https://twitter.com'}
+    { title: '이치카', filename: 'ichika.png', urlX: 'https://twitter.com/seonjeok/status/1696179939173921142?s=20', urlPixiv: 'https://www.pixiv.net/artworks/111250053'},
   ]
 
   return (
@@ -16,7 +16,8 @@ const Drawing = () => {
           key={index} 
           filename={image.filename}
           title={image.title}
-          url={image.url}/>
+          urlX={image.urlX}
+          urlPixiv={image.urlPixiv}/>
       ))}
     </>
   )

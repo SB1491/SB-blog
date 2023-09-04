@@ -1,5 +1,5 @@
 import Header from '../../components/Header/Header'
-import './MainPage.css'
+import './MainPage.module.css'
 
 const MainPage = () => {
   return (

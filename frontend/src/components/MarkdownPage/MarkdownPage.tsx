@@ -12,7 +12,7 @@ const MarkdownPage = (props: IProps) => {
   useEffect(() => {
     // Fetch or read your Markdown file content here and set it to the state.
     // For example, you can use the Fetch API to load content from a URL.
-    fetch('markdown/computer/'.concat(props.filename))
+    fetch('markdown/'.concat(props.filename))
       .then((response) => response.text())
       .then((data) => {
         setMarkdownContent(data);
