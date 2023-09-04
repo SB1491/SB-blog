@@ -1,5 +1,3 @@
-import Footer from "../../components/Footer/Footer"
-import Header from "../../components/Header/Header"
 import MarkdownPage from "../../components/MarkdownPage/MarkdownPage"
 
 const Computer = () => {
@@ -7,9 +5,9 @@ const Computer = () => {
   return (
     <div>
       <h1>Computers</h1>
-      <MarkdownPage filename="test1.md"/>
+      <MarkdownPage filename="test1.md" />
     </div>
   )
 }
 
-export default Computer
+export default Computer 

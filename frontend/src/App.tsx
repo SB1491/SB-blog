@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import MainPage from './containers/MainPage/MainPage';
@@ -16,12 +14,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
-            <Route path="/linguistics" element={<Linguistics />}/>
-            <Route path="/computer" element={<Computer />}/>
-            <Route path="/drawing" element={<Drawing />}/>
-            <Route path="/computer/:id" element={<ComputerDetailPage />}/>
-            <Route path="/linguistics/:id" element={<LinguisticsDetailPage />}/>
-            <Route path="/main" element={<MainPage />}/>
+            <Route path="/linguistics" element={<Linguistics />} />
+            <Route path="/computer" element={<Computer />} />
+            <Route path="/drawing" element={<Drawing />} />
+            <Route path="/computer/:id" element={<ComputerDetailPage />} />
+            <Route path="/linguistics/:id" element={<LinguisticsDetailPage />} />
+            <Route path="/main" element={<MainPage />} />
             <Route path="" element={<Navigate to="/main" replace />} />
           </Route>
         </Routes>

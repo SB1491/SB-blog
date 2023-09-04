@@ -6,7 +6,7 @@ const LinguisticsDetailPage = () => {
 
   return (
     <>
-      <MarkdownPage filename="linguistics/linguistics_test1.md"/>
+      <MarkdownPage filename="linguistics/linguistics_test1.md" />
     </>
   )
 }

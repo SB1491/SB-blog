@@ -24,11 +24,11 @@ const MarkdownPage = (props: IProps) => {
 
   return (
     <div>
-    <h1>Markdown to HTML</h1>
-    <div>
-      <ReactMarkdown>{markdownContent}</ReactMarkdown>
+      <h1>Markdown to HTML</h1>
+      <div>
+        <ReactMarkdown>{markdownContent}</ReactMarkdown>
+      </div>
     </div>
-  </div>
   )
 }
 
