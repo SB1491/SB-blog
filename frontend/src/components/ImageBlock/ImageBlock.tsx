@@ -20,15 +20,19 @@ const ImageBlock = (props: IProps) => {
         className={styles.imageBlock}
         style={{ width: '18rem' }}
       >
-        <Card.Img variant="top" src={"/drawing/images/".concat(props.filename)} />
+        <Card.Img
+          variant="top"
+          src={"/drawing/images/".concat(props.filename)}
+          className={styles.image}
+        />
         <Card.Body>
-          <Card.Title className="title">{props.title}</Card.Title>
+          <Card.Title className={styles.title}>{props.title}</Card.Title>
           <Button
-            variant="primary"
+            variant="outline-primary"
             className={styles.urlButton}
             onClick={() => { handleOpenNewTab(props.urlX) }}> X </Button>
           <Button
-            variant="info"
+            variant="outline-info"
             className={styles.urlButton}
             onClick={() => { handleOpenNewTab(props.urlPixiv) }}>Pixiv</Button>
         </Card.Body>

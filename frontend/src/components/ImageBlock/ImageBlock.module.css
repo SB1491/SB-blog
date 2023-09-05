@@ -1,5 +1,10 @@
+.title {
+  text-align: left;
+  font-weight: bolder;
+}
+
 .urlButton {
-  margin: 10x;
+  margin: 10px;
   padding: 10px;
 }
 
@@ -11,4 +16,26 @@
   background-color: lightblue;
   padding: 20px;
   text-align: center;
+  transition: all 0.2s linear;
+  animation: fadein 1s;
+}
+
+.drawingItem:hover {
+  filter: brightness(70%);
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.image {
+  object-fit: fill;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
