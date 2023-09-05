@@ -1,4 +1,14 @@
-.url-button {
-  margin: 10px;
+.urlButton {
+  margin: 10x;
   padding: 10px;
+}
+
+.imageBlock {
+  margin: 0 auto;
+}
+
+.drawingItem {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
 }

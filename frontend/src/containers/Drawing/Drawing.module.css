@@ -1,0 +1,8 @@
+.drawingContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* Responsive columns */
+    grid-template-rows: auto auto;
+    /* Two rows with auto height */
+    grid-gap: 10px;
+}

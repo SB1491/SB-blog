@@ -1,5 +1,5 @@
 import { Button, Card } from "react-bootstrap"
-import "./ImageBlock.module.css"
+import styles from './ImageBlock.module.css';
 
 export interface IProps {
   filename: string
@@ -15,23 +15,25 @@ const ImageBlock = (props: IProps) => {
   };
 
   return (
-    <Card 
-      className="shadow" 
-      style={{ width: '18rem' }}
-    >
-      <Card.Img variant="top" src={"/drawing/images/".concat(props.filename)}/>
-      <Card.Body>
-        <Card.Title className="title">{props.title}</Card.Title>
-        <Button 
-          variant="primary" 
-          className="url-button"
-          onClick={() => {handleOpenNewTab(props.urlX)}}> X </Button>
-        <Button 
-          variant="info"
-          className="url-button"
-          onClick={() => {handleOpenNewTab(props.urlPixiv)}}>Pixiv</Button>
-      </Card.Body>
-    </Card>
+    <div className={styles.drawingItem}>
+      <Card
+        className={styles.imageBlock}
+        style={{ width: '18rem' }}
+      >
+        <Card.Img variant="top" src={"/drawing/images/".concat(props.filename)} />
+        <Card.Body>
+          <Card.Title className="title">{props.title}</Card.Title>
+          <Button
+            variant="primary"
+            className={styles.urlButton}
+            onClick={() => { handleOpenNewTab(props.urlX) }}> X </Button>
+          <Button
+            variant="info"
+            className={styles.urlButton}
+            onClick={() => { handleOpenNewTab(props.urlPixiv) }}>Pixiv</Button>
+        </Card.Body>
+      </Card>
+    </div>
   )
 }
 
