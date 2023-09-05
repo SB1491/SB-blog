@@ -3,7 +3,12 @@ import ImageBlock from "../../components/ImageBlock/ImageBlock"
 const Drawing = () => {
 
   const images = [
-    { title: '이치카', filename: 'ichika.png', urlX: 'https://twitter.com/seonjeok/status/1696179939173921142?s=20', urlPixiv: 'https://www.pixiv.net/artworks/111250053' },
+    { 
+      title: '이치카', 
+      filename: 'ichika.png', 
+      urlX: 'https://twitter.com/seonjeok/status/1696179939173921142?s=20', 
+      urlPixiv: 'https://www.pixiv.net/artworks/111250053' 
+    },
   ]
 
   return (

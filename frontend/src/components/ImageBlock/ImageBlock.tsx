@@ -10,12 +10,9 @@ export interface IProps {
 
 const ImageBlock = (props: IProps) => {
 
-  const handleClickX = () => {
-    window.location.replace(props.urlX);
-  }
-  const handleClickPixiv = () => {
-    window.location.replace(props.urlPixiv);
-  }
+  const handleOpenNewTab = (url: string) => {
+    window.open(url, "_blank", "noopener, noreferrer");
+  };
 
   return (
     <Card 
@@ -28,11 +25,11 @@ const ImageBlock = (props: IProps) => {
         <Button 
           variant="primary" 
           className="url-button"
-          onClick={handleClickX}> X </Button>
+          onClick={() => {handleOpenNewTab(props.urlX)}}> X </Button>
         <Button 
           variant="info"
           className="url-button"
-          onClick={handleClickPixiv}>Pixiv</Button>
+          onClick={() => {handleOpenNewTab(props.urlPixiv)}}>Pixiv</Button>
       </Card.Body>
     </Card>
   )
